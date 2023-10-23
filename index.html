@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- link font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="main.css">
+
+
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="title">SPLI</h1>
+    <p class="title">TTER</p>
+  </header>
+  <main class="main">
+    <section class="section">
+      <div class="label">
+        <label class="label">Bill</label>
+        <div class="input-icon">
+          <p class="label icon">$</p>
+          <input id="bill" type="number" title="bill">
+        </div>
+      </div>
+      <label class="label">Select Tip %</label>
+      <section class="select-tip">
+        <div class="opion-percentage">5%</div>
+        <div class="opion-percentage">10%</div>
+        <div class="opion-percentage">15%</div>
+        <div class="opion-percentage">25%</div>
+        <div class="opion-percentage">50%</div>
+        <input id="custom"  type="number" autocomplete="off" placeholder="Custom">
+      </section>
+
+      <label class="label">Number of People</la>
+        <div class="input-icon">
+          <p id="response"></p>
+          <i class='bx bxs-user icon2'></i>
+          <input id="people" title="people" type="number" autocomplete="off">
+        </div>
+    </section>
+    <section class="section2">
+      <section class="result">
+        <div class="info">
+          <p class="subtitle">Tip Amount</p>
+          <span class="subtitle">/ person</span>
+        </div>
+        <p id="result">$ 0.0</p>
+
+        <div class="info">
+          <p class="subtitle">Total</p>
+          <span class="subtitle">/ person</span>
+        </div>
+
+        <p id="result-total">$ 0.0</p>
+
+
+      </section>
+      <button class="btn-reset">RESET</button>
+
+    </section>
+  </main>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/luisfranco23" target="_blank">Luis Franco</a>.
+  </div>
+  <!-- every javaScript -->
+  <script type="module" src="index.js"></script>
+</body>
+
+</html>
